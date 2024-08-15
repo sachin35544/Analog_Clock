@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary_color: #223442;
+    --secondry_color: rgb(164, 164, 164);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--primary_color);
+    overflow: hidden;
+}
+
+.theme {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.theme i{
+    font-size: 25px;
+    text-align: center;
+    color: #223442;
+}
+.theme #moon{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+
+.circle {
+    position: relative;
+    height: 550px;
+    width: 550px;
+    background: var(--primary_color);
+    border-radius: 50%;
+    text-align: center;
+     box-shadow: 50px 50px 70px rgba(255, 255, 255, 0.1) ,
+    inset 10px 15px 50px rgb(0, 0, 0, 0.3),
+    inset -10px -10px 70px rgba(255, 255, 255, 0.1), -50px -50px 70px rgb(0, 0, 0, 0.3)
+    ; 
+}
+
+.secdot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.secdot span {
+    position: absolute;
+    transform: rotate(calc(var(--index) * 6deg));
+    inset: 6px;
+}
+
+.secdot span p {
+    display: inline-block;
+    height: 12px;
+    width: 2px;
+    background: var(--secondry_color);
+}
+
+.secdot span:nth-child(5n) p {
+    height: 18px;
+    width: 3px;
+    transform: translateY(1px);
+}
+
+.circle2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2 span {
+    position: absolute;
+    transform: rotate(calc(var(--index) * 30deg));
+    inset: 32px;
+}
+
+.circle2 span p {
+    font-size: 32px;
+    transform: rotate(calc(var(--index) * -30deg));
+    color: var(--secondry_color);
+}
+
+.hendbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hend {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hend i {
+    display: inline-block;
+    transform-origin: bottom;
+    background-color: red;
+}
+
+.hor {
+    height: 300px;
+    width: 300px;
+}
+
+.hor i {
+    height: 150px;
+    width: 8px;
+}
+
+.min {
+    height: 390px;
+    width: 390px;
+}
+
+.min i {
+    height: 200px;
+    width: 8px;
+}
+
+.sec {
+    height: 480px;
+    width: 480px;
+}
+
+.sec i {
+    height: calc(240px + 70px);
+    width: 4px;
+    background-color: var(--secondry_color);
+}
+
+@media screen and (max-width: 750px) {
+    body{
+        height: 100vh;
+        width: 100vh;
+    }
+}
