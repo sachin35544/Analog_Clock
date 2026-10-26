@@ -1,22 +1,57 @@
-# Analog_Clock
-Hi this is my first Analog Clock
+# Analog Clock
 
-## features
+A modern analog clock built with pure HTML, CSS, and JavaScript. It shows the current time in real time, features a responsive layout, and includes a smooth light/dark theme toggle for a cleaner user experience.
 
- - Responsive Design
- - HTML, CSS and JS only
- - Neumorphic UI
- - Two Theme Available  <br> 1. Dark  <br> 2.  Lite
- - Exact Time Show in Clock
+## Features
 
-## Feedback
+- Real-time analog clock
+- Smooth rotating hour, minute, and second hands
+- Light and dark theme toggle
+- Responsive design for desktop and mobile screens
+- Neumorphic-inspired styling
+- Clean and modern UI with soft shadows and gradients
+- No external libraries required
 
- If you have any feedback, please reach out to me at kumawatsachin0987@gmail.com
+## Project Structure
 
-## Authors
+- `index.html` – Page structure
+- `style.css` – Styling and animations
+- `script.js` – Clock logic and theme toggle
+- `logo.png` – Project icon
+- `README.md` – Project documentation
 
- - [@sachin35544](https://github.com/sachin35544)
+## How to Run
+
+### Option 1: Open directly
+
+Open `index.html` in your browser.
+
+### Option 2: Run a local server
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Theme Toggle
+
+Click the small circular icon in the center of the clock to switch between light and dark mode.
+
+## Author
+
+- [@sachin35544](https://github.com/sachin35544)
 
 ## License
 
-[MIT License](LICENSE)
+This project is licensed under the [MIT License](LICENSE).
